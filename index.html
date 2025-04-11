@@ -5,28 +5,52 @@
     <meta charset="uft-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
+
+    <!--Reset.CSS-->
+    <link rel="stylesheet" href="reset.css">
+
+
+    <!-- CSS externo (arquivo style)-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS interno (tag style - 2° Prioridade)-->
+    <style>
+        /* slector {
+            propriedade: valor;
+        } */
+        /*body{
+            background: color #4221c7; 
+        }*/
+
+    </style>
 </head>
-<!-- HTML NÃO TEM PESCOÇO-->
-<body>
-    <section>
-        <ul>
-            <li><a href="#sobreMim">Sobre mim</a></li>
-            <li><a href="#formaca">Formação acadêmica</a></li>
-            <li><a href="#hard">Hard skills</a></li>
-            <li><a href="#soft">Soft skills</a></li>
-            <li><a href="#projetos">Meus projetos</a></li>
-            <li><a href="#artigos">Meus artigos</a></li>
-            <li><a href="#rodape">Última seção</a></li>
-        </ul>
-    </section>
+
+<body style="background-color: #ffffff; /* CSS inline (atributo style 1° Prioridade) */">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobreMim">Sobre mim</a></li>
+                <li><a href="#formaca">Formação</a></li>
+                <li><a href="#hard">Hard skills</a></li>
+                <li><a href="#soft">Soft skills</a></li>
+                <li><a href="#projetos">projetos</a></li>
+                <li><a href="#artigos">artigos</a></li>
+                <li><a href="#rodape">Última seção</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section>
         <h1 id="sobreMim">Sobre mim</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quam a amet reprehenderit animi quis at, sint veniam enim atque praesentium dolor, modi, sunt et sit quibusdam alias nulla saepe porro eligendi nobis quas! Nobis fuga earum ab eveniet itaque sint eaque, cumque magnam eligendi asperiores. Laborum eaque nemo totam numquam, facere, non, dolore labore obcaecati mollitia ipsam accusantium praesentium.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam recusandae, numquam facilis velit odit, placeat eaque magnam debitis pariatur iusto iure laudantium delectus. Obcaecati dolore deserunt perspiciatis necessitatibus numquam dolores consectetur odio hic. Culpa pariatur est ullam ipsum, officia nihil?</p>
+
         <p>Sou um estudente de DS no Senai de São Paulo</p>
         <img src="JoaoVPalandi.jpg" alt="Foto com um homen com blusa azul e um oculos escuro." width="200" title="Foto com um homen com blusa azul e um oculos escuro.">
-        <p>
-        </p>
     
+        <!--section>(h2>{Nova seção})+p*2>Lorem20-->
+        <!--header>nav.navbar>ul.lista>li*10>a>-->
+
         <ul>
             <li>
                 <a href="https://github.com/JoaoVPalandi" title="Acesso para meu perfil do GitHub." target="_blank">Acesse o meu GitHub</a>
@@ -49,6 +73,7 @@
 
     <section>
         <h2 id="hard">Hard skills</h2>
+        
         <ul>
             <li>Conehcimento em JavaScript</li>
             <li>Conehcimento em HTML e CSS</li>
@@ -93,14 +118,24 @@
 
     <section>
         <h2 id="artigos">Meus artigos</h2>
+        <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Qui, soluta assumenda.</li>
+            <li>Soluta, dolores quidem.</li>
+            <li>Nisi, tenetur quisquam!</li>
+            <li>Tempore, amet sapiente?</li>
+            <li>Omnis, veniam explicabo.</li>
+        </ul>
+
     </section>
 
     <section id="contato">
         <h2>Entre em contato comigo</h2>
         <form>
             <input type="text" name="nome">
-            <input type="text" name="email">
-            <textarea type="mensagem" rows="5" cols="50"></texteare>
+            <input type="email" name="email">
+            <input type="color">
+            <textarea name="mensagem" rows="5" cols="50"></textarea>
             <input type="submit" name="botaoEnviar">
         </form>
     </section>

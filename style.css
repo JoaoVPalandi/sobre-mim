@@ -52,6 +52,10 @@ section {
     padding: 1rem;
     border: 1px solid #000000;
 }
+
+.titulo-secao{
+    text-align: center;
+}
  
 p {
     margin-bottom: 1rem
@@ -155,11 +159,13 @@ footer ul{
     font-weight: 700;
     color: blue;
     font-size: 1.3rem;
+    text-align: center;
 }
  
 .instituicao-card{
     font-size: 1.1rem;
     color: black;
+    text-align: center;
 }
  
 .icone-card{
@@ -173,10 +179,17 @@ footer ul{
     gap: 1rem;
 }
 
-.cards-em-linhas{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    flex-wrap: wrap;
+.cards-em-linhas {
+    display: flex;               /* Ativa o Flexbox */
+    flex-direction: row;        /* Deixa os cards em linha */
+    justify-content: center;    /* Centraliza horizontalmente */
+    align-items: center;        /* Alinha no eixo vertical (linha horizontal dos cards) */
+    flex-wrap: wrap;            /* Quebra linha se não couber na tela */
+    gap: 1rem;                  /* Espaço entre os cards */
+}
+
+
+.ano-card{
+    text-align: center;
 }
 

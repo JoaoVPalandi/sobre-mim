@@ -80,7 +80,7 @@
 </section>
 
 <section id="formacaoAcademica">
-    <h2 class="cards-em-linhas">Formação acadêmica</h2>
+    <h2 class="titulo-secao">Formação acadêmica</h2>
     <ul class="card">
         <li class="titulo-card">Técnico em Desenvolvimento de Sistemas</li>
         <li class="instituicao-card">Senai"Conde José Vicente de Azevedo"</li>
@@ -102,7 +102,7 @@
 
 <section id="hardSkills">
     <h2 class="titulo-secao">Hard skills</h2>
-    <div class="cards-em-linhas">
+    <div class="cards-container cards-em-linhas">
         <ul class="card">
             <li class="icone-card">🌐</li>
             <li class="titulo-card">Desenvolvimento Web</li>
@@ -123,7 +123,7 @@
 
 <section id="softSkills">
     <h2 class="titulo-secao">Soft skills</h2>
-    <div class="cards-em-linhas">
+    <div class="cards-container cards-em-linhas">
         <ul class="card">
             <li class="icone-card">🤝</li>
             <li class="titulo-card">Trabalho em equipe</li>
@@ -153,7 +153,7 @@
 
 <section id="meusProjetos">
     <h2 class="titulo-secao"> Meus projetos</h2>
-    <div class="cards-em-linhas">
+    <div class="cards-container cards-em-linhas">
     <ul class="card">
         <li class="icone-card">🚀</li>
         <li class="titulo-card"><a href="https://joaovpalandi.github.io/lopal-moonlander/" title="Clique para acessar meu jogo!" target="_blank">Acesse meu Jogo Moonlander</a></li>
@@ -175,7 +175,7 @@
  </section>
 
 <section id="meusArtigos">
-    <h2>Meus artigos</h2>
+    <h2 class="titulo-secao">Meus artigos</h2>
     <ul>
         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nesciunt at ea voluptatibus ad odio sed
             voluptates, labore inventore quod fugiat eos iure reiciendis itaque odit nemo soluta totam minima?</li>
@@ -189,19 +189,24 @@
 </section>
 
 <section id="contato">
-    <h2>Entre em contato comigo</h2>
+    <h2 class="titulo-secao">Entre em contato comigo</h2>
     <form>
         <label for="nome">Nome:</label>
-        <input type="text" name="nome">
+        <input type="text" name="nome" required placeholder="Digite seu Nome aqui">
 
         <label for="email">E-mail:</label>
-        <input type="email" name="email">
+        <input type="email" name="email" required placeholder="Digite seu E-mail aqui">
 
         <label for="mensagem">Mensagem:</label> 
-        <textarea name="mensagem" rows="5" cols="50"></textarea>
+        <textarea name="mensagem" rows="5" cols="50" placeholder="Digite sua Mensagem"></textarea>
         <!-- <input type="submit" name="botaoEnviar" value="Solicitar contato"> -->
-        <button type="submit" name="botaoEnviar">Solicitar contato</button>
+        <button type="submit" name="botaoEnviar" >Solicitar contato</button>
     </form>
+    <p>Ou, se preferir:</p>
+    <a href="https://wa.me/551199165731" target="_blank" title="Clique para falar comigo no WhatsApp" class="icon WhatsApp">
+        <button style="background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+            Fale comigo no WhatsApp
+        </button>
 </section>
 
 <footer id="rodape">

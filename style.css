@@ -6,7 +6,7 @@
  
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(86, 86, 96);
+    background-color: white;
 }
  
 h1 {
@@ -62,26 +62,46 @@ section form {
     
 }
 
-form input{
-    border: 1px solid #000000;
-    background-color: white;
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 10px;
 }
 
-form textarea{
-    border: 1px solid black;
-    background-color: white;
+input, textarea{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    background-color: #fff;
+    color: #000000;
 }
 
 form button {
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 50px;
     background-color: white;
-    color: black
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: backgrond-color 0.3s ease;
 }
 
-footer {
+form button:hover{
+    background-color: aqua;
+    color: black;
+}
+
+form label{
+    color: #fff;
+    font-weight: bold;
+}
+
+footer{
     background-color: rgb(0, 0, 0);
     border: 3px solid #000000;
-    color: white
+    color: white;
+    align-items: center;
 }
 
 section{
@@ -90,9 +110,73 @@ section{
     border-radius: 25px 25px;
 }
 
-footer ul {
-    display: table-footer-group;
+
+footer nav{
+    text-align: center;
+}
+footer ul{
+    display:inline-flex;
+    gap: 10px;
+    padding: 0px 0px 15px 0px;
 }
 
+.icon {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    
+}
+ 
 
+.icon i {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+ 
+ 
+.card{
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+    list-style: none;
+    background-color: white;
+    color: #000000;
+    margin: 0px 0px 10px 0px;
+    align-items: center;
+}
+ 
+ 
+.titulo-card{
+    font-weight: 700;
+    color: blue;
+    font-size: 1.3rem;
+}
+ 
+.instituicao-card{
+    font-size: 1.1rem;
+    color: black;
+}
+ 
+.icone-card{
+    text-align: center;
+    font-size: 32px;
+}
+
+.cards-em-colunas{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cards-em-linhas{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
 

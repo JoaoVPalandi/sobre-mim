@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Meta informações sobre a página -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +16,16 @@
 
     <!-- CSS interno (tag style) -->
     <style>
-        /* body {
-                background-color: #00ff00;
-                } */
+        a.icon {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+ 
+        a.icon:hover {
+            color: #0059ff;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -59,56 +67,110 @@
 
 <ul>
     <li>
-        <a href="https://github.com/JoaoVPalandihttps:" target="_blank">Acesse o meu GitHub</a>
+        <a href="https://github.com/JoaoVPalandi:" target="_blank" class="icon GitHub">
+            <i class="fab fa-github"></i>Acesse meu GitHub
+        </a>
     </li>
     <li>
-        <a href="//www.linkedin.com/in/jo%C3%A3o-vitor-palandi/" target="_blank">Acesse o meu LinkedIn</a>
+        <a href="//www.linkedin.com/in/jo%C3%A3o-vitor-palandi/" target="_blank" class="icon LinkedIn">
+            <i class="fab fa-linkedin"></i>Acesse meu LinkedIn
+        </a>
     </li>
 </ul>
 </section>
 
 <section id="formacaoAcademica">
-    <h2>Formação acadêmica</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur enim adipisci incidunt necessitatibus quisquam,
-        ipsam facere saepe nemo unde ad!</p>
-    <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, nesciunt.</li>
-        <li>Libero nostrum repudiandae veniam officiis soluta quaerat repellendus ratione voluptates?</li>
-        <li>Nisi molestias natus assumenda tempore odio quod temporibus necessitatibus illum.</li>
+    <h2 class="cards-em-linhas">Formação acadêmica</h2>
+    <ul class="card">
+        <li class="titulo-card">Técnico em Desenvolvimento de Sistemas</li>
+        <li class="instituicao-card">Senai"Conde José Vicente de Azevedo"</li>
+        <li class="ano-card">Formação prevista para 2026</li>
     </ul>
 
-    <p>Sou um estudente de DS no Senai de São Paulo</p>
+    <ul class="card">
+        <li class="titulo-card">Ensino fundamental (complteo)</li>
+        <li class="instituicao-card">Sesi Catumbi</li>
+        <li class="ano-card">Formação feita em 2023</li>
+    </ul>
+    
+    <ul class="card">
+        <li class="titulo-card">Ensino Médio (Em andamento)</li>
+        <li class="instituicao-card">Sesi Catumbi</li>
+        <li class="ano-card">Formação prevista para 2026</li>
+    </ul>    
 </section>
 
 <section id="hardSkills">
-    <h2>Hard skills</h2>
-    <ul>
-        <li>Conehcimento em JavaScript</li>
-        <li>Conehcimento em HTML e CSS</li>
-        <li>Conehcimento em PowerShell</li>
-    </ul>
+    <h2 class="titulo-secao">Hard skills</h2>
+    <div class="cards-em-linhas">
+        <ul class="card">
+            <li class="icone-card">🌐</li>
+            <li class="titulo-card">Desenvolvimento Web</li>
+            <li>Front-end, HTML, CSS e JavaScript</li>
+        </ul>
+        <ul class="card">
+            <li class="icone-card">🛠️</li>
+            <li class="titulo-card">Ferramentas</li>
+            <li>Github, PowerShell e VisualStudios(VScode).</li>
+        </ul>
+        <ul class="card">
+            <li class="icone-card">👅</li>
+            <li class="titulo-card">Idiomas</li>
+            <li>Português(nativo), inglês(Iniciante)</li>
+        </ul>
+    </div>
 </section>
 
 <section id="softSkills">
-    <h2>Soft skills</h2>
-    <ul>
-        <li>Esforçado</li>
-        <li>Lido bem com pessoas</li>
-        <li>Gosto de aprender coisas novas</li>
-        <li>Paciente</li>
-
-    </ul>
+    <h2 class="titulo-secao">Soft skills</h2>
+    <div class="cards-em-linhas">
+        <ul class="card">
+            <li class="icone-card">🤝</li>
+            <li class="titulo-card">Trabalho em equipe</li>
+        </ul>
+        <ul class="card">
+            <li class="icone-card">🧠</li>
+            <li class="titulo-card">Pensamento Critíco</li>
+        </ul>
+        <ul class="card">
+            <li class="icone-card">🤔</li>
+            <li class="titulo-card">Resolução de problemas</li>
+        </ul>
+        <ul class="card">
+            <li class="icone-card">🐙</li>
+            <li class="titulo-card">Adaptabilidade</li>
+        </ul>
+        <ul class="card">
+            <li class="icone-card">📚</li>
+            <li class="titulo-card">Aprendizado Contínuo</li>
+        </ul>
+        <ul class="card">
+            <li class="icone-card">⏱️</li>
+            <li class="titulo-card">Autogestão</li>
+        </ul>
+    </div>
 </section>
 
 <section id="meusProjetos">
-    <h2> Meus projetos</h2>
-    <li><a href="https://joaovpalandi.github.io/lopal-moonlander/" title="Clique para acessar meu jogo!" target="_blank">Acesse meu Jogo Moonlander</a></li>
-    <li>
-        <a href="https://github.com/JoaoVPalandi/lopal-colecoes" target="_blank">Estrturas de coleções</a>
-    </li>
-    <li><a href="https://github.com/JoaoVPalandi/lopal-estruturas-repeticao" target="_blank">Estruturas Repetição</a></li>
-
-    <li><a href="https://github.com/JoaoVPalandilopal-estruturas-decisao" target="_blank">Estruturas decisão</a></li>
+    <h2 class="titulo-secao"> Meus projetos</h2>
+    <div class="cards-em-linhas">
+    <ul class="card">
+        <li class="icone-card">🚀</li>
+        <li class="titulo-card"><a href="https://joaovpalandi.github.io/lopal-moonlander/" title="Clique para acessar meu jogo!" target="_blank">Acesse meu Jogo Moonlander</a></li>
+    </ul> 
+    <ul class="card">
+        <li class="icone-card">📚</li>
+        <li class="titulo-card"><a href="https://github.com/JoaoVPalandi/lopal-colecoes" target="_blank">Estrturas de coleções</a></li>
+    </ul>
+    <ul class="card">
+        <li class="icone-card">🔁</li>
+        <li class="titulo-card"><a href="https://github.com/JoaoVPalandi/lopal-estruturas-repeticao" target="_blank">Estruturas Repetição</a></li>
+    </ul>  
+    <ul class="card">
+        <li class="icone-card">🤔</li>
+        <li class="titulo-card"><a href="https://github.com/JoaoVPalandilopal-estruturas-decisao" target="_blank">Estruturas decisão</a></li>
+    </ul>
+    </div>
 
  </section>
 
@@ -129,11 +191,16 @@
 <section id="contato">
     <h2>Entre em contato comigo</h2>
     <form>
+        <label for="nome">Nome:</label>
         <input type="text" name="nome">
+
+        <label for="email">E-mail:</label>
         <input type="email" name="email">
+
+        <label for="mensagem">Mensagem:</label> 
         <textarea name="mensagem" rows="5" cols="50"></textarea>
         <!-- <input type="submit" name="botaoEnviar" value="Solicitar contato"> -->
-        <button type="button" name="botaoEnviar">Solicitar contato</button>
+        <button type="submit" name="botaoEnviar">Solicitar contato</button>
     </form>
 </section>
 
@@ -141,15 +208,14 @@
     <nav>
         <p>Links úteis</p>
         <ul>
-            <address>São Paulo, SP - Brasil</address>
-        </ul>
-        <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>YouTube</li>
-            <li><a href="https://github.com/JoaoVPalandi" target="_blank">GitHub</a></li>
-            <li><a href="//www.linkedin.com/in/jo%C3%A3o-vitor-palandi/" target="_blank">LinkedIn</a></li>
-        </ul>
+            <li><i class="fab fa-facebook"></i> Facebook</li>
+            <li><i class="fab fa-instagram"></i> Instagram</li>
+            <li><i class="fab fa-youtube"></i> YouTube</li>
+            <li><a href="https://github.com/JoaoVPalandi" target="_blank" class="icon Github"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-palandi/" target="_blank" class="icon LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+          
+        <address>São Paulo, SP - Brasil</address>
         <p>&copy; Todos os direitos reservados - João Palandi</p>
     </nav>
 </footer>

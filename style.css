@@ -35,8 +35,8 @@
     --cor-fundo: #1f2937;
     --cor-fundoSection: #1e1e1e;
     --cor-texto: #ffffff;
-    --cor-texto-secundario: #000000;
-    --cor-texto-function: #000000;
+    --cor-texto-secundario: #ffffff;
+    --cor-texto-function: #ffffff;
     --cor-borda: #2c2c2c;
     --cor-borda-card: #000000;
     --cor-hover: #4d4dff;
@@ -46,7 +46,7 @@
     --cor-botao-hover: #00ffff;
     --cor-titulo-card: #0000ff;
     --cor-sombra: rgba(0, 0, 0, 0.8);
-    --cor-fundo-card: rgb(255, 255, 255);
+    --cor-fundo-card: rgb(54, 50, 50);
 
 }
 
@@ -310,6 +310,57 @@ footer ul {
     justify-content: space-evenly;
 }
 
+.artigos {
+    justify-content: space-evenly;
+}
+
+.artigos article {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: var(--cor-fundo-card);
+    padding: 1rem;
+    border-left: 5px solid var(--cor-primaria);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.artigos h3 {
+    margin-top: 0;
+    /* color: var(--cor-secundaria); */
+    margin-bottom: 1rem;
+}
+
+.artigos .data-publicacao, 
+.artigos .autor {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--cor-texto-secundario);
+    margin-right: 1em;
+}
+
+.artigos .data-publicacao::before {
+    content: "Publicado: ";
+}
+
+.artigos .autor::before {
+    content: "Por: ";
+}
+
+.artigos p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.artigos p:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.artigos footer {
+   margin-top: auto;
+   margin-bottom: .5rem;
+}
+
 .cards-em-colunas {
     display: flex;
     flex-direction: column;
@@ -343,3 +394,4 @@ footer ul {
 .botao-whatsapp:hover {
     background-color: var(--cor-whatsapp-hover);
 }
+
